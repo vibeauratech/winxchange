@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="with=device-width,  initial-scale=1.0">
+    <title>WinXchange</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>    
+<body onload="slider()">
+    <nav >
+        <input id="portfolionav-toggle" type="checkbox">
+        <a href="#" class="logo">
+            win<strong>X</strong>tickets
+        </a>    
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Tickets</a></li>
+            <li><a href="Get started.html">Contact Us</a></li>                         
+        </ul>
+        
+        <label for="portfolionav-toggle" class="portfolioicon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav> 
+
+    <div class="row">
+        <div class="contact-header">
+            <h2>HELLO FRIEND!</h2>
+            <P>Got a project and in need of a developer to collaborate with or hire? <br> I am your guy, leave me a message.</P>
+        </div>
+      </div>
+    
+        <div class="signup-container">
+            <div class="signup-box">
+                <div class="signup-text">          
+                    <div class="signup-form">
+                        <label>Enter Name</label>
+                        <input type="email" placeholder="What's your name?" class="input-field">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="What's your email?" class="input-field">
+                        <label>Type message</label>
+                        <textarea rows="5" placeholder="Your message"></textarea>
+                    </div>
+                     <button type="submit">Send  message</button>
+                </div>
+            </div>
+        </div>
+    
+
+  
+    
+   
+
+
+<footer id="contact">
+    <div class="feeter-row">
+        <div class="col">
+            <h3>win<strong>X</strong>tickets</h3>
+            <ul class="feeter-ul">
+                <p>
+                    Sed ut perspiciatis,<br> unde omnis iste<br>  natus 
+                    accusantium <br>doloremque estre. 
+                </p>               
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Links</h3>
+            <ul class="feeter-ul">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Works</a></li>
+                <li><a href="">Contact </a></li>
+            </ul>
+            
+        </div>
+        <div class="col">
+            <h3>Support</h3>
+            <ul class="feeter-ul">
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Team</a></li>
+            </ul>           
+        </div>       
+    </div>
+    <hr>
+<div class="social-icon">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>       
+</div>
+ <p class="copyright">win<strong>X</strong>tickets&copy; 2022 - All right reserved</p>   
+</footer>
+
+<script>
+    var slideImg = document.getElementById("slideImg");
+
+    var images = new Array(
+        "Hero1.jpeg",
+        "Hero2.webp",
+        "Hero3.jpeg"
+       
+     );
+    
+
+    var len = images.length;
+    var i = 0
+
+    function slider(){
+        if (i > len-1) {
+            i = 0
+        }
+        slideImg.src = images[i];
+        i++;
+        setTimeout('slider()',3000);
+    }           
+</script>
+
+
+
+ 
+
+</body>  
+</html>

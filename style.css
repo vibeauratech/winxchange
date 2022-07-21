@@ -384,6 +384,11 @@ nav .portfolioicon-burger .line{
     font-size: 28px;
     margin-bottom: 5%;
 }
+@media screen and (max-width:768px){
+    .trending h2{
+        font-size: 22px;
+    }
+}
 
 
 .project-image{
@@ -428,6 +433,102 @@ nav .portfolioicon-burger .line{
         margin-top: 0;
     }
 }
+
+
+.blog-content{
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
+}
+.blog-content h2{
+    color: #ccc;
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+.blog-left{
+    flex-basis: 45%;
+}
+.blog-left h3{
+    background: transparent;
+    color: black;
+    padding: 9px 0;
+    font-size: 44px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.blog-left p{
+    line-height: 1.6;
+    font-size: 18px;
+}
+.blog-left img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-right{
+    flex-basis: 45%;
+}
+.blog-right h3{
+    background: black;
+    color: white;
+    padding: 9px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:768px){
+    .blog-right{
+        margin-top: 30px;
+    }
+    
+}
+
+.founder{
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
+}
+.founder-left{
+    flex-basis: 45%;
+}
+.founder-left img{
+    width: 100%;
+    object-fit: cover;
+}
+.founder-right{
+    flex-basis: 45%;
+}
+.founder-right h3{
+    background: transparent;
+    color: black;
+    padding: 2px 0;
+    font-size: 16px;
+    margin-top: 14%;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.founder-right h2{
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+.founder-right p{
+    line-height: 1.6;
+    font-size: 18px;
+}
+.founder-right a{
+    margin-top: 25px;
+}
+@media screen and (max-width:768px){
+    .founder-right h2{
+        font-size: 28px;
+    }
+}
+
+
 .what{
     margin-top: 10%;
 }
@@ -435,6 +536,12 @@ nav .portfolioicon-burger .line{
 .what h2{
     text-align: left;
     font-size: 28px;  
+}
+@media screen and (max-width:768px){
+    .what h2{
+        text-align: left;
+        font-size: 22px;  
+    }
 }
 
 
@@ -722,4 +829,142 @@ hr{
         padding-bottom: 50px;
     }
     
+}
+
+
+.contact-header{
+    margin-top: 15%; 
+    padding-left: 25%;
+}
+
+.contact-header h2{
+    color: black;
+    font-size: 48px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.contact-header p{
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    .contact-header{
+        padding-left: 0;
+    }
+    .contact-header h2{
+        color:black;
+        font-size: 48px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+}
+
+
+
+
+.signup-container{
+    width: 100%;
+    min-height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin-top: 5px;
+}
+.signup-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    flex-wrap: wrap;
+}
+.signup-text{
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.signup-text{
+    background:black;
+    color: white;
+    padding: 40px 8%;
+    min-width: 250px;
+}
+.signup-text h2{
+    font-weight: 600;
+}
+
+.signup-text h4{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.input-field{
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    color: white;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 5px 0 10px;
+    background: transparent;
+    
+}
+.signup-form label{
+    font-weight: 500;
+    font-size: 12px;
+    color: #ccc;
+}
+.signup-form ::placeholder{
+    color: #ccc;
+}
+.form-row{
+    display: flex;
+    align-items: center;
+}
+.form-row input{
+    margin-right: 6px;
+}
+.signup-text button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid white;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 18px 0 10px;
+    background: white;
+    color: #111D67;
+    cursor: pointer;
+    font-weight: 700;
+}
+.signup-text button:hover{
+    background:#46509b;
+    border: 2px solid #46509b;
+    color: white;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border:2px solid #ccc ;
+    color: #C7E4E3;
+    outline: none;
+    background: transparent;
+}
+@media (max-width: 700px){
+    .signup-image img{
+        width: 360px;
+        height: 180px;
+        margin-top: 40px;
+        padding-bottom: 40px;
+        object-fit: cover;
+        display: block;
+        flex-grow: 1;
+    }
 }
