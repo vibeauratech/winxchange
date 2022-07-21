@@ -25,12 +25,12 @@
 .new-btn{
     display: inline-block;
     text-decoration: none;
-    color: #ccc;
-    border: 2px solid #ccc;
+    color: #FFF;
+    border: 2px solid black;
     padding: 16px 64px;
     font-size: 14px;
     font-weight: bold;       
-    background: transparent;
+    background: black;
     position: relative;
     cursor: pointer;
     border-radius: 1px;    
@@ -290,6 +290,9 @@ nav .portfolioicon-burger .line{
     }
 }
 
+.hero-section{
+    margin-bottom: 10%;
+}
 .hero{
     margin-top:18%;
     display: flex;
@@ -297,37 +300,90 @@ nav .portfolioicon-burger .line{
     justify-content: space-between;
 }
 .hero-left{
-    flex-basis: 55%;  
+    flex-basis: 40%;  
 }
 .hero-right{
-    flex-basis: 40%;
+    flex-basis: 50%;
 }
 .hero-left h1{
-    color: #fff;
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    padding-bottom: 8px;
+    color: black;
+    font-size: 64px;
+    margin-bottom: 8%;
+    font-weight: 800;
 }
 .hero-left p{
-    color: #ccc;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10%;
+    padding-right: 10%;
+}
+.hero-left i{
+    padding-right: 10%;
+    font-size: 18px;
+
 }
 .hero-left a{
     color: #fff;
     font-size: 20px;
 }
+.hero-vibes{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.hero-right img{
+     width: 100%;
+     height: 30rem;
+     object-fit: cover;
+}
 
 
 
-@media only screen and (max-width:700px){
-    .left-list,.right-list{
+@media only screen and (max-width:1024px){
+    .hero-left,.hero-right{
         flex-basis: 100%;
         text-align: left;
     }
-    .left-list h1{
+    .hero-left h1{
+        font-size: 36px;
         padding-top: 20%;
+        margin-bottom: 2%;
+    }
+    .hero-left p{
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 5%;
+        padding-right: 5%;
+    }
+    .hero-left i{
+        padding-right: 5%;
+        font-size: 14px;
+    
+    }
+    .hero-left a{
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 15%;
+    }
+    .hero-left .new-btn{
+        padding: 12px 36px;
+    font-size: 12px;
     }
 
+    .hero-right img{
+        width: 100%;
+        height: 80%;
+    }
+
+}
+
+.trending{
+    margin-bottom: 2%;
+}
+.trending h2{
+    font-size: 28px;
 }
 
 
