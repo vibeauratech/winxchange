@@ -8,6 +8,40 @@
       
 }  
 
+.row{
+    width: 80%;
+    margin: auto;
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;      
+}
+@media screen and (max-width: 768px){
+    .row{
+        flex-direction: column;
+        text-align: left;    
+    }
+}
+
+.new-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ccc;
+    border: 2px solid #ccc;
+    padding: 16px 64px;
+    font-size: 14px;
+    font-weight: bold;       
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 1px;    
+}
+.new-btn:hover{
+    color: rgb(1, 36, 36);
+    background: #ccc;
+    border: 1px solid #ccc;
+}
+
+
 .banner{
     width: 100%;
     height: 600px;
@@ -256,140 +290,46 @@ nav .portfolioicon-burger .line{
     }
 }
 
-
-.about-row{
-    margin-top: 5%;
+.hero{
+    margin-top:18%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.about-us{
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
-
+.hero-left{
+    flex-basis: 55%;  
 }
-.about-col{
-    flex-basis: 48%;
-    padding: 30px 2px;
+.hero-right{
+    flex-basis: 40%;
 }
-.about-col img{
-    width: 100%;
-    object-fit: cover;
-}
-.about-col h1{
-    font-size: 40px;
-    padding-top: 60px;
-}
-.about-col p{
-    padding: 15px 0 25px;
-    line-height: 1.8;
-    font-size: 17px;
-}
-.new-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(70, 69, 69);
-    border: 2px solid rgb(70, 69, 69);
-    padding: 16px 64px;
-    font-size: 14px;
-    font-weight: bold;       
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    border-radius: 1px;    
-}
-.new-btn:hover{
-    color: white;
-    background: rgb(70, 69, 69);
-    border: 1px solid rgb(70, 69, 69);
-}
-@media(max-width: 768px){
-    .about-row{
-        flex-direction: column;
-        text-align: center;    
-    }
-    .about-col h1{
-        padding-top: 0;
-    }
-    .about-col p{
-        font-size: 14px;
-        line-height: 1.6;
-    }
-}
-@media(max-width: 1024px){
-    .about-col h1{
-        padding-top: 0;
-    }
-    .about-col p{
-        font-size: 16px;
-        line-height: 1.6;
-    }
-}
-
-
-.project-texts{
+.hero-left h1{
+    color: #fff;
     font-size: 36px;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 100px;
-    padding-bottom:15px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    padding-bottom: 8px;
 }
-@media screen and (max-width: 768px){
-    .project-texts{
-        font-size: 34px;
-        text-align: center;
-        margin-left: 0;
+.hero-left p{
+    color: #ccc;
+}
+.hero-left a{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+@media only screen and (max-width:700px){
+    .left-list,.right-list{
+        flex-basis: 100%;
+        text-align: left;
+    }
+    .left-list h1{
+        padding-top: 20%;
     }
 
 }
 
-.project-image{
-    width: 88%;
-    align-items: center;
-    --gap: 20px;
-    --num-cols: 4;
-    --row-height:250px;
-
-    box-sizing: border-box;
-    padding: var(--gap);
-    margin:0 80px;
-
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-}
-
-.project-image > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.project-image-col-2 {
-    grid-column: span 2;
-}
-.project-image-row-2 {
-    grid-row: span 2;
-}
-
-@media screen and (max-width:1024px){
-    .project-image{
-        --num-cols: 2;
-        --row-height:200px;
-        width: 88%;
-        margin:0 60px;
-    }
-}
-@media screen and (max-width:768px){
-    .project-image{
-        --num-cols: 2;
-        --row-height:200px;
-        width: 100%;
-        margin:0;
-        margin-top: 0;
-    }
-}
 
 
 footer{
