@@ -468,7 +468,7 @@ nav .portfolioicon-burger .line{
 .blog-right{
     flex-basis: 45%;
 }
-.blog-right h3{
+.blog-right .top-row h3{
     background: black;
     color: white;
     padding: 9px 0;
@@ -476,12 +476,17 @@ nav .portfolioicon-burger .line{
     margin-bottom: 20px;
     text-align: center;
 }
-
+.blog-right .top-row{
+    margin-top: 8%;
+}
 
 
 @media screen and (max-width:768px){
-    .blog-right{
+    .blog-right .top-row{
         margin-top: 30px;
+    }
+    .blog-left h3{
+        font-size: 28px;
     }
     
 }
