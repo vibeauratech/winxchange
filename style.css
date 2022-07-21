@@ -9,7 +9,7 @@
 }  
 
 .row{
-    width: 80%;
+    width: 85%;
     margin: auto;
     margin-top: 0%;
     display: flex;
@@ -218,7 +218,7 @@ nav .portfolioicon-burger .line{
         top: 80px;
         bottom: 100%;
         z-index: 9;
-        background:rgb(28, 175, 106);
+        background:rgba(0,0,0,0.75);
         display: flex;
         width: auto;
         height: auto;
@@ -379,11 +379,170 @@ nav .portfolioicon-burger .line{
 
 }
 
-.trending{
-    margin-bottom: 2%;
-}
 .trending h2{
+    text-align: left;
     font-size: 28px;
+    margin-bottom: 5%;
+}
+
+
+.project-image{
+    width: 100%;
+    align-items: center;
+    --gap: 20px;
+    --num-cols: 4;
+    --row-height:250px;
+    object-fit: cover;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin:0 ;
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.project-image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width:1024px){
+    .project-image{
+        --num-cols: 2;
+        --row-height:200px;
+        width: 88%;
+        margin:0 60px;
+    }
+}
+@media screen and (max-width:768px){
+    .project-image{
+        --num-cols: 2;
+        --row-height:200px;
+        width: 100%;
+        margin:0;
+        margin-top: 0;
+    }
+}
+.what{
+    margin-top: 10%;
+}
+
+.what h2{
+    text-align: left;
+    font-size: 28px;  
+}
+
+
+.pro-con{
+    width: 100%;
+    min-height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+    padding-top: 0;
+    margin-top: 1%;
+}
+.pro-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.pro-left{
+    flex-basis: 45%;
+    flex-grow: 1;
+    background: black;
+    color: white;
+    padding: 40px 4%;
+    margin-right: 5%;
+    min-width: 250px;
+}
+
+.pro-left h2{
+    background: transparent;
+    font-size: 32px;
+}
+.pro-left img{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    background: transparent;
+}
+
+
+@media screen and (max-width:1024px){
+    .pro-left{
+        margin-bottom: 5%;
+        margin-right: 0%;
+        flex-basis: 100%;
+    }
+    .pro-right{
+        flex-basis: 100%;
+    }
+    
+}
+
+#purple{
+    background: #E1B7DD;
+    color: black;
+}
+
+#black{
+    background: black;
+    
+}
+#black h2{
+    color: #FFF;
+}
+#black img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.pro-right{
+    flex-basis: 45%;
+    flex-grow: 1;
+    background: #FAE965;
+    color: white;
+    padding: 40px 4%;
+    min-width: 250px;
+}
+
+.pro-right h2{
+    background: transparent;
+    font-size: 32px;
+    color: black;
+}
+.pro-right img{
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+    padding-top: 20px;
+    background: transparent;
+}
+
+@media screen and (max-width:768px){
+    .pro-right h2{
+        font-size:24px ;
+    }
+}
+
+@media screen and (max-width:768px){
+    .pro-left h2{
+        font-size:24px ;
+    }
+    .pro-left h3{
+        font-size:16px ;
+        padding-bottom: 20px;
+    }
 }
 
 
@@ -391,7 +550,7 @@ nav .portfolioicon-burger .line{
 footer{
     width: 100%;
     bottom: 0;
-    background: rgb(70, 69, 69);
+    background: black;
     padding: 100px 0 30px;
     font-size: 13px ;
     line-height: 20px;
@@ -425,6 +584,9 @@ footer{
     width: fit-content;
     margin-bottom: 35px;
     position: relative;
+}
+.col h3 strong{
+    color: yellow;
 }
 
 
