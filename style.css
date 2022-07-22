@@ -378,12 +378,30 @@ nav .portfolioicon-burger .line{
     }
 
 }
+.trend-row{
+    text-align: right;
+    width: 85%;
+    margin: auto;
+    padding-top: 2%;
+    margin-top: 0%; 
+}
+
+.trend-row a{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    border-bottom: 2px solid black;
+}
+.trend-row a:hover{
+    color: tomato;
+    border-bottom: 2px solid tomato;
+}
 
 .trending h2{
-    text-align: left;
     font-size: 28px;
     margin-bottom: 5%;
 }
+
 @media screen and (max-width:768px){
     .trending h2{
         font-size: 22px;
