@@ -637,6 +637,12 @@ nav .portfolioicon-burger .line{
     height: 18.8rem;
     object-fit: cover;
 }
+@media screen and (max-width:768px){
+    
+    #black img{
+        height: 15rem;
+    }
+}
 
 .pro-right{
     flex-basis: 45%;
@@ -663,6 +669,9 @@ nav .portfolioicon-burger .line{
 @media screen and (max-width:768px){
     .pro-right h2{
         font-size:24px ;
+    }
+    .pro-right img{
+        height: 15rem;
     }
 }
 
