@@ -219,7 +219,8 @@ nav .portfolioicon-burger .line{
         bottom: 100%;
         margin-left: 50%;
         z-index: 9;
-        background:rgba(0,0,0,0.75);
+        background:#FAE965;
+        color: black;
         display: flex;
         width: 50%;
         height: auto;
